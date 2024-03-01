@@ -1,0 +1,9 @@
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: capitalize;
+  line-height: 120%;
+  text-align: center;
+  color: var(--graphite-color);
+}
