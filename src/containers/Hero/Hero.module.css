@@ -1,0 +1,19 @@
+.heroContainer {
+  width: 1440px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  width: 430px;
+}

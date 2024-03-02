@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  gap: 20px;
+  width: 188px;
+  height: 80px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.01em;
+  color: #414449;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  width: 80px;
+  height: 80px;
+
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.buttonIcon {
+  width: 80px;
+  height: 80px;
+
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: inherit;
+}
+
+.playIcon {
+  position: absolute;
+  top: 47%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}

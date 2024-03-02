@@ -1,10 +1,12 @@
-import Footer from '../../containers/Footer/Footer';
+import Hero from '../../containers/Hero/Hero';
+// import Footer from '../../containers/Footer/Footer';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Footer />
+      <Hero />
+      {/* <Footer /> */}
     </>
   );
 }
