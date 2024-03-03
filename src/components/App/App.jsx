@@ -1,12 +1,14 @@
 import Hero from '../../containers/Hero/Hero';
-// import Footer from '../../containers/Footer/Footer';
+import Footer from '../../containers/Footer/Footer';
+import Colors from '../../containers/Colors/Colors';
 import './App.css';
 
 function App() {
   return (
     <>
       <Hero />
-      {/* <Footer /> */}
+      <Colors />
+      <Footer />
     </>
   );
 }
