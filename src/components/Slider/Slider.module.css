@@ -1,0 +1,70 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  margin-bottom: 90px;
+}
+
+.buttonsContainer {
+  display: flex;
+  width: 103px;
+  height: 46px;
+}
+
+.prevButton,
+.nextButton {
+  display: block;
+  width: calc(100% / 2);
+  border: 1.15px solid #17181a;
+  transition: border 250ms ease-in, background-color 250ms ease-in;
+
+  cursor: pointer;
+}
+
+.prevButton .icon,
+.nextButton .icon {
+  fill: #17181a;
+  transition: fill 250ms ease-in;
+}
+
+.prevButton {
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+}
+
+.nextButton {
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+
+.prevButton:hover,
+.prevButton:focus,
+.nextButton:hover,
+.nextButton:focus {
+  border: 1.15px solid gray;
+  background-color: #fff;
+}
+
+.prevButton:disabled,
+.nextButton:disabled {
+  border: 1.15px solid lightgray;
+  background-color: #fff;
+}
+
+.prevButton:disabled .icon,
+.nextButton:disabled .icon {
+  fill: lightgray;
+}
+
+.background {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+
+  width: 510px;
+  height: 558px;
+  background-color: #dbdbdb;
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+}

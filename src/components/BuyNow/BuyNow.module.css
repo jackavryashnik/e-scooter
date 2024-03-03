@@ -7,15 +7,23 @@
   height: 58px;
   padding: 0;
 
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.02em;
   color: #17181a;
 
+  transform: scale(1);
+  transition: transform 250ms ease-in;
   background: transparent;
   border: transparent;
   cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  transform: scale(1.1);
 }
 
 .arrowIcon {

@@ -4,16 +4,16 @@ export default function HowItWorks() {
   return (
     <div className={css.container}>
       <p className={css.description}>Watch our video how it works</p>
-      <button className={css.button}>
-        <svg className={css.buttonIcon}>
+      <a className={css.link} href="#">
+        <svg className={css.icon}>
           <path
             id="circlePath"
             d="M 37,37 m -37,0 a 37,37 0 1,0 74,0 a 37,37 0 1,0 -74,0"
             fill="none"
             stroke="none"
           />
-          <text>
-            <textPath href="#circlePath">See • how • it • works</textPath>
+          <text fill="#718176">
+            <textPath href="#circlePath">See • how • it • works •</textPath>
           </text>
         </svg>
         <svg
@@ -31,7 +31,7 @@ export default function HowItWorks() {
             strokeWidth="0.833333"
           />
         </svg>
-      </button>
+      </a>
     </div>
   );
 }

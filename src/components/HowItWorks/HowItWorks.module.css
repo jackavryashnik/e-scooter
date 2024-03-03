@@ -6,6 +6,7 @@
 }
 
 .description {
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.39;
@@ -13,7 +14,7 @@
   color: #414449;
 }
 
-.button {
+.link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,25 +23,49 @@
   width: 80px;
   height: 80px;
 
+  transform: scale(1);
+  transition: transform 250ms ease-in;
   background: transparent;
   border: transparent;
   cursor: pointer;
 }
 
-.buttonIcon {
-  width: 80px;
-  height: 80px;
+.link:hover,
+.link:focus {
+  transform: scale(1.1);
+}
 
+.icon {
+  position: absolute;
+  top: 9%;
+  left: -40%;
+
+  width: 80px;
+  height: 78px;
+
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.3em;
   color: inherit;
+  animation: rotate 40s linear infinite;
 }
 
 .playIcon {
   position: absolute;
-  top: 47%;
-  left: 48%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  animation: rotate 40s linear infinite;
+  fill: #718176;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
